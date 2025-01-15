@@ -12,7 +12,7 @@ public class Main {
         while (true) {
             System.out.println("\n1. Add Spieler\n2. Update Spieler\n3. Delete Spieler\n4. List Spielers");
             System.out.println("5. Add Verein\n6. Update Verein\n7. Delete Verein\n8. List Vereins");
-            System.out.println("9. Filter By \n10. Get Spieler\n11. Get Verein");
+            System.out.println("9. Filter By City \n10. Get Spieler\n11. Get Verein");
             System.out.println("0. Exit");
             int choice = Integer.parseInt(scanner.nextLine());
 

@@ -57,4 +57,12 @@ public class Controller {
                 .filter(verein -> verein.getCity().equals(city))
                 .forEach(System.out::println);
     }
+
+//    public void filterWert(List<Spieler> spieler, List<Verein> vereins, String condition){
+//        if(condition == "aufsteigend") {
+//            vereins.stream()
+//                    .filter(verein -> verein.getSpielerList())
+//
+//        }
+//    }
 }
