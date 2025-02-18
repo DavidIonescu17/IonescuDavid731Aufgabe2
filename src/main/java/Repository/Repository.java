@@ -80,6 +80,13 @@ public class Repository {
                 .filter(charakter -> charakter.getDorf().equals(dorf))
                 .forEach(System.out::println);
     }
+    public void showCharakters(List<Charakter> charakterList,String region){
+        charakterList.stream()
+                .filter(charakter -> charakter.getProduktList().stream()
+                        .anyMatch(produkt -> produkt.getRegion().equals(region)))
+                .sorted(Comparator.comparing(Charakter::getName))
+                .forEach(System.out::println);
+    }
 
 
 

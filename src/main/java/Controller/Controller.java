@@ -51,6 +51,8 @@ public class Controller {
     public void filterCharakter(List<Charakter> charakterList, String ort){
         repo.filterCharakter(charakterList, ort);
     }
-
+    public void showCharakters(List<Charakter> charakterList, String region){
+        repo.showCharakters(charakterList,region);
+    }
 
 }

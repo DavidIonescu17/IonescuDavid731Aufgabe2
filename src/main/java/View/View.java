@@ -109,7 +109,11 @@ public class View {
                     String dorf = scanner.nextLine();
                     controller.filterCharakter(controller.getCharakterList(), dorf);
                 }
-
+                case 12 -> {
+                    System.out.println("Enter region to get Charakters:");
+                    String region = scanner.nextLine();
+                    controller.showCharakters(controller.getCharakterList(), region);
+                }
                 case 0 -> {
                     System.out.println("Exiting...");
                     return;
