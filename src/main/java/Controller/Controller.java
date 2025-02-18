@@ -24,7 +24,7 @@ public class Controller {
         return repo.getProduktList();
     }
 
-    public void updateProdukt(String name,String name2, int price, String region){
+    public void updateProdukt(String name,String name2, double price, String region){
         repo.updateProdukt(name,name2, price, region);
     }
     public void deleteProdukt(String name){

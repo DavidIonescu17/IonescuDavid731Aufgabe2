@@ -2,10 +2,10 @@ package Model;
 
 public class Produkt {
     String name;
-    int price;
+    double price;
     String region;
 
-    public Produkt(String name, int price, String region) {
+    public Produkt(String name, double price, String region) {
         this.name = name;
         this.price = price;
         this.region = region;
@@ -19,11 +19,11 @@ public class Produkt {
         this.name = name;
     }
 
-    public int getPrice() {
+    public double getPrice() {
         return price;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 

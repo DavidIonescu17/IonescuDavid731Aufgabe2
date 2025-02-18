@@ -29,7 +29,7 @@ public class Repository {
         return produktList;
     }
 
-    public void updateProdukt(String nameToUpdate,String name, int price, String region){
+    public void updateProdukt(String nameToUpdate,String name, double price, String region){
         for(Produkt produkt : produktList){
             if(produkt.getName().equals(nameToUpdate)) {
                 produkt.setName(name);
