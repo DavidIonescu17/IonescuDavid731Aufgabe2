@@ -114,6 +114,13 @@ public class View {
                     String region = scanner.nextLine();
                     controller.showCharakters(controller.getCharakterList(), region);
                 }
+                case 13 -> {
+                    System.out.println("Enter name of Charakter");
+                    String name = scanner.nextLine();
+                    System.out.println("Enter Absteigend or anything else for order");
+                    String sortMode = scanner.nextLine();
+                    controller.sortProdukts(controller.getCharakterList(), name, sortMode);
+                }
                 case 0 -> {
                     System.out.println("Exiting...");
                     return;

@@ -54,5 +54,7 @@ public class Controller {
     public void showCharakters(List<Charakter> charakterList, String region){
         repo.showCharakters(charakterList,region);
     }
-
+    public void sortProdukts(List<Charakter> charakterList, String name, String sortMode){
+        repo.sortProdukts(charakterList,name,sortMode);
+    }
 }

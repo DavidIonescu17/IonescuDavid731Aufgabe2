@@ -87,6 +87,15 @@ public class Repository {
                 .sorted(Comparator.comparing(Charakter::getName))
                 .forEach(System.out::println);
     }
+    public void sortProdukts(List<Charakter> charakterList, String name, String sortMode){
+        charakterList.stream()
+                .filter(charakter -> charakter.getName().equals(name))
+                .map(charakter -> charakter.getProduktList().stream()
+                        .sorted(sortMode.equals("Absteigend") ? Comparator.comparing(Produkt::getPrice)
+                                : Comparator.comparing(Produkt::getPrice).reversed())
+                        .collect(Collectors.toList()))
+                .forEach(System.out::println);
+    }
 
 
 
