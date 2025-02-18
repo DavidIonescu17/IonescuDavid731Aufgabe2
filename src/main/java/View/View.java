@@ -104,11 +104,17 @@ public class View {
                 case 10 -> {
                     controller.getCharakterList().forEach(System.out::println);
                 }
+                case 11 -> {
+                    System.out.println("Enter dorf to filter Charakter:");
+                    String dorf = scanner.nextLine();
+                    controller.filterCharakter(controller.getCharakterList(), dorf);
+                }
 
                 case 0 -> {
                     System.out.println("Exiting...");
                     return;
                 }
+
                 default -> System.out.println("Invalid choice.");
             }
         }

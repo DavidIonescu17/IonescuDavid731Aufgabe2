@@ -48,6 +48,9 @@ public class Controller {
     public void deleteCharakter(int id){
         repo.deleteCharakter(id);
     }
+    public void filterCharakter(List<Charakter> charakterList, String ort){
+        repo.filterCharakter(charakterList, ort);
+    }
 
 
 }

@@ -75,7 +75,11 @@ public class Repository {
         charakterList.removeIf(charakter -> charakter.getId()==id);
     }
 
-
+    public void filterCharakter(List<Charakter>charakterList,String dorf){
+        charakterList.stream()
+                .filter(charakter -> charakter.getDorf().equals(dorf))
+                .forEach(System.out::println);
+    }
 
 
 
